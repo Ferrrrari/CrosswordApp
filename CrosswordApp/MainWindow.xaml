@@ -1,0 +1,143 @@
+﻿<Window x:Class="CrosswordApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Кроссворд" Height="1133" Width="927">
+    <Grid>
+        
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+
+        <Grid Grid.Column="0" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+
+
+            <TextBox Grid.Row="0" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="А"/>
+            <TextBox Grid.Row="1" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Л"/>
+            <TextBox Grid.Row="2" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Г"/>
+            <TextBox Grid.Row="3" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="О"/>
+            <TextBox Grid.Row="4" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Р"/>
+            <TextBox Grid.Row="5" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="И"/>
+
+            <TextBox Grid.Row="3" Grid.Column="0" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="П"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Р"/>
+            <TextBox Grid.Row="3" Grid.Column="2" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="О"/>
+            <TextBox Grid.Row="3" Grid.Column="3" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Г"/>
+            <TextBox Grid.Row="3" Grid.Column="4" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Р"/>
+            <TextBox Grid.Row="3" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="А"/>
+            <TextBox Grid.Row="3" Grid.Column="6" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="М"/>
+            <TextBox Grid.Row="3" Grid.Column="7" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="М"/>
+            <TextBox Grid.Row="3" Grid.Column="8" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="И"/>
+            <TextBox Grid.Row="3" Grid.Column="9" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="С"/>
+            <TextBox Grid.Row="3" Grid.Column="10" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Т"/>
+
+            <TextBox Grid.Row="4" Grid.Column="3" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="А"/>
+            <TextBox Grid.Row="4" Grid.Column="4" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Н"/>
+            <TextBox Grid.Row="4" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="А"/>
+            <TextBox Grid.Row="4" Grid.Column="6" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Л"/>
+            <TextBox Grid.Row="4" Grid.Column="7" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="И"/>
+            <TextBox Grid.Row="4" Grid.Column="8" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="З"/>
+
+            <TextBox Grid.Row="5" Grid.Column="5" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Д"/>
+            <TextBox Grid.Row="5" Grid.Column="6" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Е"/>
+            <TextBox Grid.Row="5" Grid.Column="7" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Б"/>
+            <TextBox Grid.Row="5" Grid.Column="8" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="А"/>
+            <TextBox Grid.Row="5" Grid.Column="9" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Г"/>
+            <TextBox Grid.Row="5" Grid.Column="10" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Г"/>
+            <TextBox Grid.Row="5" Grid.Column="11" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="И"/>
+            <TextBox Grid.Row="5" Grid.Column="12" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Н"/>
+            <TextBox Grid.Row="5" Grid.Column="13" Width="30" Height="30" Margin="2" TextAlignment="Center" FontSize="16" Tag="Г"/>
+        
+        
+        </Grid>
+
+        <StackPanel Grid.Column="1" Margin="20">
+
+            <TextBlock Text="По горизонтали:" FontWeight="Bold" Margin="0,0,0,10"/>
+            <TextBlock Text="1. ПРОГРАММИСТ (14 букв) - Специалист по разработке ПО" 
+                       MouseEnter="TextBlock_MouseEnter" 
+                       MouseLeave="TextBlock_MouseLeave"/>
+            <TextBlock Text="2. АНАЛИЗ (7 букв) - Исследование задачи" 
+                       MouseEnter="TextBlock_MouseEnter" 
+                       MouseLeave="TextBlock_MouseLeave"/>
+            <TextBlock Text="3. ДЕБАГГИНГ (10 букв) - Поиск ошибок в коде" 
+                       MouseEnter="TextBlock_MouseEnter" 
+                       MouseLeave="TextBlock_MouseLeave"/>
+
+            <TextBlock Text="По вертикали:" FontWeight="Bold" Margin="0,20,0,10"/>
+            <TextBlock Text="1. АЛГОРИТМ (9 букв) - Последовательность действий" 
+                       MouseEnter="TextBlock_MouseEnter" 
+                       MouseLeave="TextBlock_MouseLeave"/>
+            
+
+            <Button Content="Проверить" Margin="0,20" Click="CheckAnswers_Click"/>
+            <Button Content="Очистить" Click="ClearFields_Click"/>
+            <Button Content="Показать ответы" Click="ShowAnswers_Click"/>
+
+            <TextBlock x:Name="HintText" 
+                       Margin="0,20" 
+                       TextWrapping="Wrap" 
+                       FontStyle="Italic"
+                       Opacity="0"
+                       Foreground="#FF444444"/>
+            
+            <Canvas x:Name="ImageCanvas" Grid.ColumnSpan="2" Panel.ZIndex="1">
+                <Image x:Name="TaskImage" Width="200" Visibility="Collapsed"
+                   Source="/Resources/task_image.png" Stretch="Uniform"
+                   MouseLeftButtonDown="TaskImage_MouseLeftButtonDown"
+                   MouseLeftButtonUp="TaskImage_MouseLeftButtonUp"
+                   MouseMove="TaskImage_MouseMove">
+                    
+                    <Image.RenderTransform>
+                        
+                        <ScaleTransform x:Name="ImageScale"/>
+                    </Image.RenderTransform>
+                </Image>
+                
+            </Canvas>
+
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Panel.ZIndex="2">
+                <Button x:Name="BtnZoomIn" Content="+" Width="30" Click="BtnZoomIn_Click"/>
+                <Button x:Name="BtnZoomOut" Content="-" Width="30" Margin="0,5" Click="BtnZoomOut_Click"/>
+                <Button x:Name="BtnCloseImage" Content="×" Width="30" Click="BtnCloseImage_Click"/>
+            </StackPanel>
+            <ComboBox x:Name="ThemeSelector" 
+              Margin="0,20" 
+              SelectedIndex="0"
+              SelectionChanged="ThemeSelector_SelectionChanged">
+                <ComboBoxItem Content="Светлая тема"/>
+                <ComboBoxItem Content="Тёмная тема"/>
+                <ComboBoxItem Content="Цветная тема"/>
+            </ComboBox>
+
+            <Button Content="Загрузить задания" Margin="0,20" Click="LoadQuestions_Click"/>
+            <Button Content="Загрузить подсказки" Click="LoadHints_Click"/>
+            <Button Content="Экспорт в Excel" Margin="0,20" Click="ExportToExcel_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
